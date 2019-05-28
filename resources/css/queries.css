@@ -182,18 +182,18 @@
 
 @media only screen and (max-width: 631px){
     .header-title{
-        left:26%;
-        top:27%;
+        left:27%;
+        top:25%;
         font-size:200%;
         margin-bottom: 10px;
     }
     
     .main-nav{
-        font-size:85%;
+        font-size:87%;
     }
     
      .main-nav li{
-        padding:1px;
+        padding:2px;
     }
     
     h1{
@@ -204,7 +204,7 @@
 
 @media only screen and (max-width: 600px){
     .header-title{
-        left:23%;
+        left:25%;
         top:25%;
         font-size:190%;
         margin-bottom: 10px;
