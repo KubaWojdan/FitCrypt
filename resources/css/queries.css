@@ -276,9 +276,8 @@
         left:19%
     }
     
-    .main-nav li,
     .main-nav li{
-        padding:5px;
+        padding:1px;
     }
     
 }
