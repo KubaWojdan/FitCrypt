@@ -1,0 +1,208 @@
+<! DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- daje zanc telefonom zeby nie zmnijszaly wielkosci stron-->
+        
+        <title>FitCrypt</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    </head>
+    <body>
+        <header>
+            <nav >
+                <div class="row">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="index.html">O nas</a></li>
+                        <li><a href="jak-zamowic.html">Jak zamówić</a></li>
+                        <li><a href="diety.html">Diety</a></li>
+                        <li><a href="cennik.html">Cennik</a></li>
+                        <li><a href="kalkulator.html">Kalkulator kalorii</a></li>
+                        <li><a href="zamow.html">Zamów</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="header-title">
+                    <h1>FitCrypt</h1>
+            </div>
+        </header>
+        
+        <section class="section-diety">
+            <div class="row">
+                <h2>Diety do wyboru</h2>
+            </div>
+            <div class="row">
+                    <div class="wybor-diety">
+                        <label for="dieta" id="diety-label">Wybierz dietę:</label>
+                        <select name="diety" id="diety" onclick="showNew()">
+                            <option value="1" selected>Standard</option>
+                            <option value="2">Sport</option>
+                            <option value="3">Vege</option>
+                            <option value="4">Gluten free</option>
+                            <option value="5">Lactose free</option>
+                            <option value="6">Gluten&Lactos free</option>
+                            <option value="7">Junior</option>
+                            <option value="8">Low IG</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="row">
+                <div id="dieta1" style="display:block;">
+                    <div class="col span-1-of-2">
+                        <div class="meal-photo">
+                            <figure class="clearfix">
+                                <img src="resources/css/img/standard.png" alt="dieta standard">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="opis-diety">
+                            <p>Nullam urna nisi, euismod iaculis dui at, fringilla volutpat risus. Sed in tellus convallis tortor vestibulum convallis. Vivamus ultricies imperdiet pharetra. Ut volutpat ut nulla non lacinia. Donec euismod sem et dictum cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque tincidunt est id ante porta posuere. Suspendisse potenti.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="dieta2" style="display:none;">
+                    <div class="col span-1-of-2">
+                        <div class="meal-photo">
+                            <figure class="clearfix">
+                                <img src="resources/css/img/sport.png" alt="dieta sport">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="opis-diety">
+                            <p>Nunc tempor condimentum dapibus. Aliquam sit amet iaculis eros. Morbi ante lorem, iaculis a porta vel, volutpat at massa. Nulla facilisi. Morbi feugiat finibus elit nec lobortis. Integer in velit id erat imperdiet iaculis. Vestibulum interdum, dui vitae interdum rutrum, leo nulla volutpat augue, sit amet consequat lorem erat vel ligula. Curabitur varius, augue varius commodo scelerisque, lectus tortor dapibus ligula, ac aliquam nunc enim at nibh. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="dieta3" style="display:none;">
+                    <div class="col span-1-of-2">
+                        <div class="meal-photo">
+                            <figure class="clearfix">
+                                <img src="resources/css/img/vege.png" alt="dieta vege">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="opis-diety">
+                            <p>Nullam mollis magna ut ex dictum maximus. Morbi tristique aliquam massa vitae rhoncus. Etiam semper sollicitudin lacus. Donec scelerisque, nibh a scelerisque congue, ante lacus tristique est, vitae fringilla tortor nulla sed risus. Nulla lacinia lectus purus, non consectetur ipsum cursus nec. Fusce tortor turpis, lobortis sit amet condimentum quis, finibus sed diam. Sed aliquam accumsan ligula sit amet feugiat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="dieta4" style="display:none;">
+                    <div class="col span-1-of-2">
+                        <div class="meal-photo">
+                            <figure class="clearfix">
+                                <img src="resources/css/img/glutenfree.png" alt="dieta gluten free">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="opis-diety">
+                            <p>Vestibulum rhoncus cursus lectus, ac imperdiet lorem mollis ac. Suspendisse vestibulum ut sapien ut ultricies. Maecenas quis scelerisque mauris. Mauris dignissim dolor ante, a ultricies massa varius sed. Aliquam finibus quis risus at posuere. Maecenas elementum ac tellus eget vestibulum. Fusce cursus at metus molestie laoreet. Nullam et sem blandit, faucibus lorem tincidunt, facilisis mauris. Sed pulvinar lacinia urna. Morbi rhoncus sodales aliquam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="dieta5" style="display:none;">
+                    <div class="col span-1-of-2">
+                        <div class="meal-photo">
+                            <figure class="clearfix">
+                                <img src="resources/css/img/lactosefree.png" alt="dieta lactose free">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="opis-diety">
+                            <p>Morbi facilisis vehicula tincidunt. Aliquam sit amet neque imperdiet, auctor est ut, maximus ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam accumsan sed urna eu lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris dignissim dolor ante, a ultricies massa varius sed. Aliquam finibus quis risus at posuere. Maecenas elementum ac tellus eget vestibulum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="dieta6" style="display:none;">
+                    <div class="col span-1-of-2">
+                        <div class="meal-photo">
+                            <figure class="clearfix">
+                                <img src="resources/css/img/glutlacfree.png" alt="dieta fluten&lactose free">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="opis-diety">
+                            <p>Duis diam massa, facilisis laoreet odio vitae, dignissim porta ipsum. Donec vel nulla eget purus venenatis pulvinar sed vel enim. Pellentesque massa nisi, consequat vel risus non, interdum volutpat lacus. Etiam sed erat non velit pretium facilisis ac id quam. Phasellus a purus libero. Morbi at arcu nec arcu pharetra dignissim. Praesent cursus, odio in suscipit elementum, turpis justo faucibus nulla, porta lacinia purus ligula interdum nulla
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="dieta7" style="display:none;">
+                    <div class="col span-1-of-2">
+                        <div class="meal-photo">
+                            <figure class="clearfix">
+                                <img src="resources/css/img/junior.png" alt="dieta junior">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="opis-diety">
+                            <p>Aenean fermentum nibh velit, eget lacinia odio suscipit at. Suspendisse non pulvinar sapien. Mauris nec bibendum lorem, ac luctus massa. Pellentesque nunc orci, sodales in efficitur vel, pharetra et purus. Etiam eu mi iaculis, maximus odio nec, dictum justo. Phasellus consequat mi at viverra lacinia. Nullam mattis varius sapien, vitae egestas sapien rhoncus vel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="dieta8" style="display:none;">
+                    <div class="col span-1-of-2">
+                        <div class="meal-photo">
+                            <figure class="clearfix">
+                                <img src="resources/css/img/lowig.png" alt="dieta lowIG">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="opis-diety">
+                            <p>Ut vitae feugiat mi, quis volutpat lorem. Etiam ut purus dui. In lacinia nunc eget magna convallis, eu luctus mi ornare. Aenean id pharetra ligula, at vehicula sapien. Nunc pretium orci ut lectus pretium tincidunt. Cras in hendrerit nibh. Proin ornare, arcu at sollicitudin finibus, metus quam tristique lacus, cursus gravida velit ante sit amet felis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+               
+       
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="info">
+                        <li>Telefon: (48) 123 456 789 lub (12) 987 654 321</li>
+                        <li>E-mail kontaktowy: fitcrypt@fitcrypt.pl</li>
+                        <li>W razie pytań odnośnie diety skontaktuj się naszym dietetykiem poprzez e-mail: dietcrypt@fitcrypt.com</li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon class="fb-link" name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="insta-link" name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="row copyright">
+                    Copyright © 2019 by FitCrypt. All right reserved
+            </div>
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="resources/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,570 @@
+<! DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- daje zanc telefonom zeby nie zmnijszaly wielkosci stron-->
+        
+        <title>FitCrypt</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    </head>
+    <body>
+        <header>
+            <nav >
+                <div class="row">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="index.html">O nas</a></li>
+                        <li><a href="jak-zamowic.html">Jak zamówić</a></li>
+                        <li><a href="diety.html">Diety</a></li>
+                        <li><a href="cennik.html">Cennik</a></li>
+                        <li><a href="kalkulator.html">Kalkulator kalorii</a></li>
+                        <li><a href="zamow.html">Zamów</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            
+            <div class="header-title">
+                    <h1>FitCrypt</h1>
+            </div>
+            
+        </header>
+        
+       
+        <section class="section-cennik">
+            <div class="row">
+                <h2>Cennik</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3 pytanie">
+                    Ile kcal dziennie potrzebujesz?
+                </div>
+                <div class="col span-2-of-3">
+                    <select name="kcal" id="mySelect" onclick="getDiv()">
+                        <option value="1000">1000kcal</option>
+                        <option value="1500">1500kcal</option>
+                        <option value="2000">2000kcal</option>
+                        <option value="2500">2500kcal</option>
+                        <option value="3000">3000kcal</option>
+                        <option value="3500">3500kcal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row rwd-table" id="cennik1" style="display:block;"><!--1000kcal***********************************************************-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Diety</th>
+                            <th>1 dzień</th>
+                            <th>1 tydzień</th>
+                            <th>2 tygodnie</th>
+                            <th>3 tygodnie</th>
+                            <th>4 tygodnie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard</td>
+                            <td>53zł</td>
+                            <td>265zł</td>
+                            <td>520zł</td>
+                            <td>765zł</td>
+                            <td>1000zł</td>
+                        </tr>
+                        <tr>
+                            <td>Sport</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Vege</td>
+                            <td>53zł</td>
+                            <td>265zł</td>
+                            <td>520zł</td>
+                            <td>765zł</td>
+                            <td>1000zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten free</td>
+                            <td>53zł</td>
+                            <td>265zł</td>
+                            <td>520zł</td>
+                            <td>765zł</td>
+                            <td>1000zł</td>
+                        </tr>
+                        <tr>
+                            <td>Lactose free</td>
+                            <td>53zł</td>
+                            <td>265zł</td>
+                            <td>520zł</td>
+                            <td>765zł</td>
+                            <td>1000zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten&Lactose free</td>
+                            <td>53zł</td>
+                            <td>265zł</td>
+                            <td>520zł</td>
+                            <td>765zł</td>
+                            <td>1000zł</td>
+                        </tr>
+                        <tr>
+                            <td>Junior</td>
+                             <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Low IG</td>
+                            <td>53zł</td>
+                            <td>265zł</td>
+                            <td>520zł</td>
+                            <td>765zł</td>
+                            <td>1000zł</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row rwd-table" id="cennik2" style="display:none;"><!--1500kcal***********************************************************-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Diety</th>
+                            <th>1 dzień</th>
+                            <th>1 tydzień</th>
+                            <th>2 tygodnie</th>
+                            <th>3 tygodnie</th>
+                            <th>4 tygodnie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard</td>
+                            <td>55zł</td>
+                            <td>275zł</td>
+                            <td>540zł</td>
+                            <td>795zł</td>
+                            <td>1040zł</td>
+                        </tr>
+                        <tr>
+                            <td>Sport</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Vege</td>
+                            <td>55zł</td>
+                            <td>275zł</td>
+                            <td>540zł</td>
+                            <td>795zł</td>
+                            <td>1040zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten free</td>
+                            <td>59zł</td>
+                            <td>295zł</td>
+                            <td>580zł</td>
+                            <td>855zł</td>
+                            <td>1120zł</td>
+                        </tr>
+                        <tr>
+                            <td>Lactose free</td>
+                            <td>59zł</td>
+                            <td>295zł</td>
+                            <td>580zł</td>
+                            <td>855zł</td>
+                            <td>1120zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten&Lactose free</td>
+                            <td>53zł</td>
+                            <td>265zł</td>
+                            <td>520zł</td>
+                            <td>765zł</td>
+                            <td>1000zł</td>
+                        </tr>
+                        <tr>
+                            <td>Junior</td>
+                            <td>49zł</td>
+                            <td>250zł</td>
+                            <td>490zł</td>
+                            <td>710zł</td>
+                            <td>920zł</td>
+                        </tr>
+                        <tr>
+                            <td>Low IG</td>
+                            <td>61zł</td>
+                            <td>305zł</td>
+                            <td>600zł</td>
+                            <td>885zł</td>
+                            <td>1160zł</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row rwd-table" id="cennik3" style="display:none;"><!--2000kcal***********************************************************-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Diety</th>
+                            <th>1 dzień</th>
+                            <th>1 tydzień</th>
+                            <th>2 tygodnie</th>
+                            <th>3 tygodnie</th>
+                            <th>4 tygodnie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard</td>
+                            <td>59zł</td>
+                            <td>295zł</td>
+                            <td>580zł</td>
+                            <td>855zł</td>
+                            <td>1120zł</td>
+                        </tr>
+                        <tr>
+                            <td>Sport</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Vege</td>
+                            <td>59zł</td>
+                            <td>295zł</td>
+                            <td>580zł</td>
+                            <td>855zł</td>
+                            <td>1120zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten free</td>
+                            <td>63zł</td>
+                            <td>315zł</td>
+                            <td>620zł</td>
+                            <td>915zł</td>
+                            <td>1200zł</td>
+                        </tr>
+                        <tr>
+                            <td>Lactose free</td>
+                            <td>63zł</td>
+                            <td>315zł</td>
+                            <td>620zł</td>
+                            <td>915zł</td>
+                            <td>1200zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten&Lactose free</td>
+                            <td>64zł</td>
+                            <td>320zł</td>
+                            <td>630zł</td>
+                            <td>930zł</td>
+                            <td>1200zł</td>
+                        </tr>
+                        <tr>
+                            <td>Junior</td>
+                             <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Low IG</td>
+                            <td>65zł</td>
+                            <td>325zł</td>
+                            <td>640zł</td>
+                            <td>945zł</td>
+                            <td>1220zł</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="row rwd-table" id="cennik4" style="display:none;"><!--2500kcal***********************************************************-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Diety</th>
+                            <th>1 dzień</th>
+                            <th>1 tydzień</th>
+                            <th>2 tygodnie</th>
+                            <th>3 tygodnie</th>
+                            <th>4 tygodnie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard</td>
+                            <td>62zł</td>
+                            <td>320zł</td>
+                            <td>630zł</td>
+                            <td>930zł</td>
+                            <td>1220zł</td>
+                        </tr>
+                        <tr>
+                            <td>Sport</td>
+                            <td>66zł</td>
+                            <td>330zł</td>
+                            <td>650zł</td>
+                            <td>960zł</td>
+                            <td>1260zł</td>
+                        </tr>
+                        <tr>
+                            <td>Vege</td>
+                            <td>62zł</td>
+                            <td>320zł</td>
+                            <td>630zł</td>
+                            <td>930zł</td>
+                            <td>1220zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten free</td>
+                            <td>68zł</td>
+                            <td>340zł</td>
+                            <td>670zł</td>
+                            <td>990zł</td>
+                            <td>1300zł</td>
+                        </tr>
+                        <tr>
+                            <td>Lactose free</td>
+                            <td>68zł</td>
+                            <td>340zł</td>
+                            <td>670zł</td>
+                            <td>990zł</td>
+                            <td>1300zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten&Lactose free</td>
+                            <td>69zł</td>
+                            <td>345zł</td>
+                            <td>680zł</td>
+                            <td>1005zł</td>
+                            <td>1320zł</td>
+                        </tr>
+                        <tr>
+                            <td>Junior</td>
+                             <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Low IG</td>
+                            <td>70zł</td>
+                            <td>350zł</td>
+                            <td>695zł</td>
+                            <td>1120zł</td>
+                            <td>1340zł</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="row rwd-table" id="cennik5" style="display:none;"><!--3000kcal***********************************************************-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Diety</th>
+                            <th>1 dzień</th>
+                            <th>1 tydzień</th>
+                            <th>2 tygodnie</th>
+                            <th>3 tygodnie</th>
+                            <th>4 tygodnie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard</td>
+                            <td>67zł</td>
+                            <td>360zł</td>
+                            <td>690zł</td>
+                            <td>990zł</td>
+                            <td>1290zł</td>
+                        </tr>
+                        <tr>
+                            <td>Sport</td>
+                            <td>69zł</td>
+                            <td>365zł</td>
+                            <td>700zł</td>
+                            <td>1005zł</td>
+                            <td>1320zł</td>
+                        </tr>
+                        <tr>
+                            <td>Vege</td>
+                            <td>67zł</td>
+                            <td>360zł</td>
+                            <td>690zł</td>
+                            <td>990zł</td>
+                            <td>1290zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten free</td>
+                            <td>72zł</td>
+                            <td>360zł</td>
+                            <td>695zł</td>
+                            <td>990zł</td>
+                            <td>1300zł</td>
+                        </tr>
+                        <tr>
+                            <td>Lactose free</td>
+                            <td>72zł</td>
+                            <td>360zł</td>
+                            <td>695zł</td>
+                            <td>990zł</td>
+                            <td>1300zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten&Lactose free</td>
+                            <td>73zł</td>
+                            <td>365zł</td>
+                            <td>700zł</td>
+                            <td>1005zł</td>
+                            <td>1320zł</td>
+                        </tr>
+                        <tr>
+                            <td>Junior</td>
+                             <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Low IG</td>
+                            <td>74zł</td>
+                            <td>370zł</td>
+                            <td>710zł</td>
+                            <td>1120zł</td>
+                            <td>1340zł</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="row rwd-table" id="cennik6" style="display:none;"><!--3500kcal***********************************************************-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Diety</th>
+                            <th>1 dzień</th>
+                            <th>1 tydzień</th>
+                            <th>2 tygodnie</th>
+                            <th>3 tygodnie</th>
+                            <th>4 tygodnie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard</td>
+                            <td>71zł</td>
+                            <td>400zł</td>
+                            <td>740zł</td>
+                            <td>1040zł</td>
+                            <td>1350zł</td>
+                        </tr>
+                        <tr>
+                            <td>Sport</td>
+                            <td>74zł</td>
+                            <td>430zł</td>
+                            <td>790zł</td>
+                            <td>1260zł</td>
+                            <td>1560zł</td>
+                        </tr>
+                        <tr>
+                            <td>Vege</td>
+                            <td>71zł</td>
+                            <td>400zł</td>
+                            <td>740zł</td>
+                            <td>1040zł</td>
+                            <td>1350zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten free</td>
+                            <td>75zł</td>
+                            <td>435zł</td>
+                            <td>795zł</td>
+                            <td>1265zł</td>
+                            <td>1565zł</td>
+                        </tr>
+                        <tr>
+                            <td>Lactose free</td>
+                            <td>75zł</td>
+                            <td>435zł</td>
+                            <td>795zł</td>
+                            <td>1265zł</td>
+                            <td>1565zł</td>
+                        </tr>
+                        <tr>
+                            <td>Gluten&Lactose free</td>
+                            <td>76zł</td>
+                            <td>240zł</td>
+                            <td>805zł</td>
+                            <td>1280zł</td>
+                            <td>1585zł</td>
+                        </tr>
+                        <tr>
+                            <td>Junior</td>
+                             <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Low IG</td>
+                            <td>77zł</td>
+                            <td>245zł</td>
+                            <td>815zł</td>
+                            <td>1295zł</td>
+                            <td>1605zł</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="info">
+                        <li>Telefon: (48) 123 456 789 lub (12) 987 654 321</li>
+                        <li>E-mail kontaktowy: fitcrypt@fitcrypt.pl</li>
+                        <li>W razie pytań odnośnie diety skontaktuj się naszym dietetykiem poprzez e-mail: dietcrypt@fitcrypt.com</li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon class="fb-link" name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="insta-link" name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="row copyright">
+                    Copyright © 2019 by FitCrypt. All right reserved
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="resources/js/script.js"></script>
+    </body>
+</html>

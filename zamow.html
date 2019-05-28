@@ -1,0 +1,141 @@
+<! DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- daje zanc telefonom zeby nie zmnijszaly wielkosci stron-->
+        
+        <title>FitCrypt</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    </head>
+    <body>
+        <header>
+            <nav >
+                <div class="row">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="index.html">O nas</a></li>
+                        <li><a href="jak-zamowic.html">Jak zamówić</a></li>
+                        <li><a href="diety.html">Diety</a></li>
+                        <li><a href="cennik.html">Cennik</a></li>
+                        <li><a href="kalkulator.html">Kalkulator kalorii</a></li>
+                        <li><a href="zamow.html">Zamów</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            
+            <div class="header-title">
+                    <h1>FitCrypt</h1>
+            </div>
+        
+        </header>
+        
+       
+        <section class="section-zamow">
+            <div class="row">
+                <h2>Zamów</h2>
+            </div>
+            
+            
+            <div class="row">
+                    <div class="form">
+                    <form method="post" action="#" class="kalkulator-kalorii">
+                        
+                    
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="wiek">Dieta</label>
+                            </div>
+                    <div class="col span-1-of-3">
+                        <select name="dieta" id="myDiet" onclick="">
+                            <option value="Standard">Standard</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Vege">Vege</option>
+                            <option value="Gluten Free">Gluten Free</option>
+                            <option value="Lactose Free">Lactose Free</option>
+                            <option value="Gluten&Lactose Free">Gluten&Lactose Free</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Low IG">Low IG</option>
+                        </select>
+                    </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="waga">Ilość kalorii</label>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <select name="dieta" id="myKcal" onclick="">
+                                    <option value="1000">1000kcal</option>
+                                    <option value="1500">1500kcal</option>
+                                    <option value="2000">2000kcal</option>
+                                    <option value="2500">2500kcal</option>
+                                    <option value="3000">3000kcal</option>
+                                    <option value="3500">3500kcal</option>
+                    </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="wzrost">Czas</label>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <select class="zamow-select" name="dieta" id="myTime" onclick="">
+                        <option value="1 dzien">1 dzień</option>
+                        <option value="1 tydzien">1 tydzień</option>
+                        <option value="2 tygodnie">2 tygodnie</option>
+                        <option value="3 tygodnie">3 tygodnie</option>
+                        <option value="4 tygodnie">4 tygodnie</option>
+                    </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <input type="submit" value="Dodaj do koszyka" id="zamow">
+                            </div>
+                        </div>
+                    </form>
+                    </div>    
+                </div>
+            
+            
+            
+            
+            
+            
+            
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="info">
+                        <li>Telefon: (48) 123 456 789 lub (12) 987 654 321</li>
+                        <li>E-mail kontaktowy: fitcrypt@fitcrypt.pl</li>
+                        <li>W razie pytań odnośnie diety skontaktuj się naszym dietetykiem poprzez e-mail: dietcrypt@fitcrypt.com</li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon class="fb-link" name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="insta-link" name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright">
+                    Copyright © 2019 by FitCrypt. All right reserved
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="resources/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,281 @@
+
+
+
+/*duze tablety  do 1200px (szerokosc mniejsza niz 1140px row*/
+@media only screen and (max-width: 1400px){
+    .header-title{
+        left:36%;
+    }
+
+}
+
+@media only screen and (max-width: 1290px){
+    .header-title{
+        left:35%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+    .row{
+        padding: 0 2%;
+    }
+    
+    .main-nav{
+        padding-left: 15px;
+        font-size:90%;
+    }
+    
+    .header-title{
+        left:33%;
+    }
+}
+
+
+@media only screen and (max-width: 1141px){
+    body{
+        font-size: 95%;
+    }
+    
+    .main-nav{
+        font-size: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 1121px){
+    body{
+        font-size: 90%;
+    }
+    
+    .main-nav{
+        font-size: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 1086px){
+   
+   
+    
+    .main-nav{
+        padding-left: 30px;
+        font-size: 90%;
+    }
+    
+}
+
+
+/*male tablety i duze tablety 768px-1023px*/
+@media only screen and (max-width: 1025px){
+    body{
+        font-size: 90%;
+    }
+    
+    .main-nav li{
+        
+    }
+    
+    h1{
+        
+    }
+    
+    .plan-box{
+        width:100%;
+        margin-left: 0%;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        padding:18px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1002px){
+    
+    body{
+        font-size: 85%;
+    }
+    
+    .opis-diety{
+        margin-left: 55px;
+        width: 65%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 981px){
+    
+    
+    .mobile-nav-icon{
+        display:inline-block;
+    }
+    
+    .main-nav{
+        display: none;
+        float:left;
+    }
+    
+    .main-nav li{
+        display: block;
+        padding:4px;
+    }
+   
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        border:0;
+        padding:0px;
+    }
+    
+    .header-title{
+        left:40%;
+        font-size: 270%;
+    }
+    
+}
+
+
+@media screen and (max-width:960px) {
+	.rwd-table {
+		overflow-x:scroll;
+	}	
+}
+
+
+
+/*male telefony i male tablety: 481px - 767px*/
+@media only screen and (max-width: 767px){
+   
+
+    .row{
+        padding: 0 4%;
+    }
+    
+    .opis-diety{
+        margin-left: 60px;
+        width: 65%;
+        float:right;
+    }
+    
+    
+    input[type=submit]{
+        width:auto;
+    }
+    
+    .section-kalkulator p{
+        font-size:95%;
+    }
+    
+    .section-zamow select{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 700px){
+    .header-title{
+        left:41%;
+        font-size:260%;
+    }
+
+}
+
+@media only screen and (max-width: 631px){
+    .header-title{
+        left:23%;
+        top:25%;
+        font-size:250%;
+        margin-bottom: 10px;
+    }
+    
+    h1{
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .header-title{
+        left:19%;
+        top:25%;
+        font-size:240%;
+        margin-bottom: 10px;
+    }
+    
+    h1{
+        margin-top: 10px;
+    }
+
+}
+
+
+
+/*male telefony do 480px*/
+@media only screen and (max-width: 480px){
+    body{
+        font-size: 80%;
+    }
+    
+   .pracownik-img{
+        padding:10px;
+        margin-left: 110px;
+    }
+    
+    .step{
+        margin-top:5%;
+        margin-left: 43%;
+    }
+    
+    .section-jak-to-dziala h3{
+        font-size: 150%;
+    }
+    
+    .mid-div{
+        font-size:120%;
+    }
+    
+    .radio-container{
+        float:none;
+    }
+    
+    .opis-diety{
+        margin-left: 60px;
+        width: 80%;
+        float:none;
+        font-size: 120%;
+    }
+    
+    select{
+        margin:10px;
+    }
+    
+    .mobile-nav-icon{
+        font-size:150%;
+}
+    
+}
+
+@media screen and (max-width:420px) {
+    .header-title{
+        left:14%
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
