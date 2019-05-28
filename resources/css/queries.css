@@ -183,13 +183,17 @@
 @media only screen and (max-width: 631px){
     .header-title{
         left:26%;
-        top:25%;
+        top:27%;
         font-size:200%;
         margin-bottom: 10px;
     }
     
     .main-nav{
         font-size:85%;
+    }
+    
+     .main-nav li{
+        padding:1px;
     }
     
     h1{
@@ -259,6 +263,10 @@
     
     .mobile-nav-icon{
         font-size:150%;
+}
+    
+    .bmi-text{
+    margin-top:10px;
 }
     
 }
