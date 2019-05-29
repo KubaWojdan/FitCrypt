@@ -1,2 +1,2 @@
 #My website
-Moja pierwsza strona internetowa zbudowana bez felxa i grida.
+Moja pierwsza strona internetowa zbudowana bez flexa i grida.
